@@ -70,7 +70,8 @@ app.post('/signin',(req,res)=>{
     }).catch(()=>{
         res.status(400).send("<h1>Submission is unsuccessful! <br> Try Again</h1>")
     })
-    emailsent=req.body;
+
+    let emailsent=req.body;
     // send email here
     const transporter = nodemailer.createTransport({
         service:'gmail',
@@ -99,9 +100,6 @@ app.post('/signin',(req,res)=>{
     console.log(req.body);
 });
 
-app.get('/email',(req,res)=>{
-    res.status(200).render('login.pug');
-});
 
 app.get('/', (req,res)=>{
     res.status(200).render('index.pug');

@@ -1,4 +1,39 @@
+body{
+  background: #a3ff95;
+  
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
   }
+
+#mytask{
+   display: block;
+   width: 20%;
+   margin: 15px auto;
+   padding: 0.5% 1%;
+   font-size: 1.2rem;
+   border-radius:5px;
+}
+
+th, td{
+    padding: 4px 7px;
+    font-size: 1.2rem;
+}
+
+th{
+   font-size: 1.3rem;
+}
+
+.container{
+    overflow-x: auto;
+
+}
+
+@media (max-width:900px){
+     
+    #mytask{
+       width: 200px;
+    }
+}
