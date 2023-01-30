@@ -117,6 +117,10 @@ app.get('/complain', (req,res)=>{
      res.status(200).render('complain.pug');
 })
 
+app.get('/chatbot', (req,res)=>{
+    res.status(200).send(Filecontent);
+})
+
 
 
 app.listen(port, () => { 
