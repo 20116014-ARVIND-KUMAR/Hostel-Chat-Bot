@@ -1,6 +1,6 @@
 body{
   background: #a3ff95;
-  
+  padding: 0% 2%;
 }
 
 table, th, td {
@@ -12,14 +12,15 @@ table, th, td {
    display: block;
    width: 20%;
    margin: 15px auto;
-   padding: 0.5% 1%;
-   font-size: 1.2rem;
+   padding: 1% 1.5%;
+   font-size: 1.1rem;
    border-radius:5px;
 }
 
 th, td{
     padding: 4px 7px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 th{
@@ -35,5 +36,9 @@ th{
      
     #mytask{
        width: 200px;
+    }
+
+    body{
+      padding: 0%;
     }
 }

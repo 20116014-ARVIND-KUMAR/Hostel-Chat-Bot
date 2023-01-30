@@ -76,14 +76,14 @@ app.post('/signin',(req,res)=>{
     const transporter = nodemailer.createTransport({
         service:'gmail',
         auth:{
-         user:'hostelchat314@gmail.com',
-         pass:'juiccskzxlfqbltc'
+         user:'hostelchatbot544@gmail.com',
+         pass:'wqtnfhhjkyqymytx'
       },
  });
  
  
  const mailoptions = {
-       from:'hostelchat314@gmail.com',
+       from:'hostelchatbot544@gmail.com',
        to:`${emailsent.email}`,
        subject:'Hostel Chat Bot Signing in',
        text:`You have successfully sign in to Hostel Chat Bot App. `
