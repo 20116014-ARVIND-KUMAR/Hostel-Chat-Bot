@@ -1,6 +1,6 @@
 body{
   background: #a3ff95;
-  padding: 0% 2%;
+  padding: 0% 1%;
 }
 
 table, th, td {
@@ -9,6 +9,9 @@ table, th, td {
   }
 
 #mytask{
+  background-image: url('../images');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
    display: block;
    width: 20%;
    margin: 15px auto;
