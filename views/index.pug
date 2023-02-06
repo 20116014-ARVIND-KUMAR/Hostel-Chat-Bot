@@ -5,15 +5,15 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1')
   title Hostel Chat Bot
   script(src='https://kit.fontawesome.com/b3a329cc2d.js' crossorigin='anonymous')
-  link(rel='stylesheet' href='../static/CSS/styles.css')
+  link(rel='stylesheet' href='./static/CSS/styles.css')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Moon+Dance&family=Nunito:wght@600&family=Patrick+Hand&family=Roboto+Slab:wght@300&family=Solitreo&display=swap' rel='stylesheet')
-  link(rel='apple-touch-icon' sizes='180x180' href='../static/images/apple-touch-icon.png')
-  link(rel='icon' type='image/png' sizes='32x32' href='../static/images/favicon-32x32.png')
-  link(rel='icon' type='image/png' sizes='16x16' href='../static/images/favicon-16x16.png')
+  link(rel='apple-touch-icon' sizes='180x180' href='./static/images/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='./static/images/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='./static/images/favicon-16x16.png')
 section#navbar.navigation
-  img.brand.hvr-bounce-in(id="logoclick" src='../static/images/chatbot.png' alt='logo')
+  img.brand.hvr-bounce-in(id="logoclick" src='./static/images/chatbot.png' alt='logo')
   .nav-container
     nav
       .nav-mobile
@@ -22,27 +22,33 @@ section#navbar.navigation
       ul.nav-list
         li
           a.hvr-bounce-in(href="/")
-            img.home(src='../static/images/home.png' alt='home')
+            img.home(src='./static/images/home.png' alt='home')
             |  Home
         li
           a.hvr-bounce-in(href="./about")
-            img.info(src='../static/images/information.png' alt='information')
+            img.info(src='./static/images/information.png' alt='information')
             |                 About
         li
           a.hvr-bounce-in(href='mailto:hostelchatbot544@gmail.com?subject=Regarding Feedback')
-            img.mail(src='../static/images/mail.png' alt='mail')
+            img.mail(src='./static/images/mail.png' alt='mail')
             | Feedback
+        li 
+           button.button(id="loginbtn" role="button") Log In
         li
-         button.button(id="signinbtn" role='button') Sign In
+           button.button(id="signinbtn" role='button') Sign In 
+        li
+           button.button(id="statusbtn" role='button') Status
+        li
+           button.adminbtn(id="adminbtn" role='button') Admin 
 .starting
-  img.chatbotmob(src='../static/images/chatbotmob.png' alt='chatbot')
+  img.chatbotmob(src='./static/images/chatbotmob.png' alt='chatbot')
   h1.team We The Team
   h1
-    .typewrite(href='' data-period='2000' data-type='[ "The Innovation Ninjas", "Presents", "The Hostel ChatBot" ]')
+    .typewrite(href='' data-period='2000' data-type='[ "The Innovation Ninjas", "Presents", "The Hostel ChatBot"]')
       span.wrap
 // services
 .room-cleaning.center(data-aos='fade-left')
-  img(src='../static/images/room-cleaning.png' alt='room-cleaning')
+  img(src='./static/images/room-cleaning.png' alt='room-cleaning')
   p.room-cleaning-des
     | Room cleaning: Our website offers support for keeping your room clean
     | and tidy. We understand that living in a hostel can be challenging, and
@@ -51,7 +57,7 @@ section#navbar.navigation
     | the necessary resources and assistance to ensure your room is always
     | clean.
 .electricity.center(data-aos='fade-right')
-  img(src='../static/images/electricity.png' alt='electrician')
+  img(src='./static/images/electricity.png' alt='electrician')
   p.electrician-des
     | Electricity problems: Electrical problems can be a major inconvenience,
     | and our website is here to help. We offer support for resolving any
@@ -60,7 +66,7 @@ section#navbar.navigation
     | to ensuring that you have access to reliable and safe electricity at all
     | times.
 .plumber.center(data-aos='fade-left')
-  img(src='../static/images/plumber.png' alt='plumber')
+  img(src='./static/images/plumber.png' alt='plumber')
   p.plumber-des
     | Water problems: If you are experiencing problems with your water supply,
     | our website is here to help. We understand the importance of having
@@ -68,7 +74,7 @@ section#navbar.navigation
     | issues you may be facing. Whether it&apos;s a leaky faucet or a more serious
     | issue, our team is ready to assist you.
 .carpanter.center(data-aos='fade-right')
-  img(src='../static/images/carpanter.png' alt='carpanter')
+  img(src='./static/images/carpanter.png' alt='carpanter')
   p.carpanter-des
     | Furniture problems: Our website offers support for resolving any issues
     | you may be experiencing with your furniture. Whether it&apos;s a broken chair
@@ -76,22 +82,22 @@ section#navbar.navigation
     | of having comfortable and functional furniture, and we will work with
     | you to ensure that your furniture is in top condition at all times.
 .food.center(data-aos='fade-left')
-  img(src='../static/images/food.png' alt='food')
+  img(src='./static/images/food.png' alt='food')
   p.food-des
     | Food problems: Our website offers support for resolving any issues you may be experiencing with your food. Whether it&apos;s a contaminated product or a cooking mistake, our team is here to help. We understand the importance of having safe and delicious food, and we will work with you to ensure that your food is of the highest quality at all times.
 .ragging.center(data-aos='fade-right')
-  img(src='../static/images/ragging.png' alt='ragging')
+  img(src='./static/images/ragging.png' alt='ragging')
   p.ragging-des
     | Ragging problems: Our website offers support for resolving any issues you may be experiencing with ragging. Whether it&apos;s physical or mental harassment, our team is here to help. We understand the importance of providing a safe and respectful environment for everyone, and we will work with you to ensure that ragging does not occur on our campus.
 .playstore
   h3 Soon Coming On PlayStore
-  img(src='../static/images/playstore.png' alt='playstore-logo')
+  img(src='./static/images/playstore.png' alt='playstore-logo')
 // footer
 footer
   a(href='https://github.com/Vikas-18/Hostel_Chat_Bot')
-    img.gitlogo(src='../static/images/github.png' alt='github logo')
+    img.gitlogo(src='./static/images/github.png' alt='github logo')
   h5 Designed and Developed by The Innovation Ninjas
-script(src='../static/JS/main.js')
+script(src='./static/JS/main.js')
 script(src='https://unpkg.com/aos@next/dist/aos.js')
 script.
   AOS.init({

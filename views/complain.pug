@@ -16,11 +16,11 @@
 
 </head>
 
-<body>
+<body id="bg-animation">
 
   <div class="container-lg">
     <div class="head">
-      <img src="../static/images/chatbot.png" alt="Hostel Chat Bot Logo">
+      <img  src="../static/images/chatbot.png" alt="Hostel Chat Bot Logo">
       <h1>Hostel Chat Bot</h1>
     </div>
     <div class="signin">
@@ -29,41 +29,33 @@
     <form action="/complain", method="post">
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Name</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" name="name" placeholder="Enter your name">
+        <input type="text" class="form-control" id="formGroupExampleInput" name="name" placeholder="Enter your name" required>
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Contact Number</label>
-        <input type="phone" class="form-control" id="formGroupExampleInput" name="phone" placeholder="Enter your mobile number">
+        <input type="phone" class="form-control" id="formGroupExampleInput" name="phone" placeholder="Enter your mobile number" required>
       </div>
       <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Email</label>
-        <input type="email" class="form-control" id="formGroupExampleInput" name="email" placeholder="Enter your email">
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Branch</label>
-        <select class="form-select" aria-label="Default select example" name="branch">
-            <option selected>Select your branch</option>
-            <option>ARCH</option>
-            <option>BIOMED</option>
-            <option>BIOTECH</option>
-            <option>CHEMICAL</option>
-            <option>CSE</option>
-            <option>CIVIL</option>
-            <option>ELECTRICAL</option>
-            <option>IT</option>
-            <option>MECHANICAL</option>
-            <option >ETC</option>
-            <option>META</option>
-            <option >MINING</option>
-            <option>OTHER</option>
+        <label for="formGroupExampleInput" class="form-label">Hostel</label>
+        <select class="form-select" aria-label="Default select example" name="hostel" required>
+          <option selected >Select your hostel</option>
+            <option>Hostel-Mahanadi</option>
+            <option>Hostel-Indrawati</option>
+            <option>PG Hostel</option>
+             <option>Seonath</option>
+            <option>Hostel-Mainput</option>
+            <option>Hostel-Chitrakot</option>
+            <option>Hostel-Malhar</option>
+            <option>Hostel-Kotumsar</option>
+            <option>Hostel-Sirpur</option>
         </select>
       </div>
       <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Room Number</label>
-        <input type="number" class="form-control" id="formGroupExampleInput" name="room" placeholder="Enter your room number">
+        <label for="formGroupExampleInput" class="form-label" required >Room Number</label>
+        <input type="number" class="form-control" id="formGroupExampleInput" name="room" placeholder="Enter your room number" required>
       </div>
       <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Problem you are facing</label>
-        <select class="form-select" aria-label="Default select example" name="problem">
+        <label for="formGroupExampleInput" class="form-label" required >Problem you are facing</label>
+        <select class="form-select" aria-label="Default select example" name="problem" required>
             <option selected>Select your problem</option>
             <option>Electricity</option>
             <option>Water</option>
@@ -77,14 +69,27 @@
         </select>
       </div>
       <div class="mb-3">
-        <label for="floatingTextarea2">Comments</label>
-        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2" class="comments" >Comments</label>
+        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required ></textarea>
       </div>
        <button type="submit" class="btn btn-dark">Submit</button>
     </form>
     </div>
   </div>
 
+script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js')
+script(src='https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js')
+script.
+  VANTA.GLOBE({
+  el: "#bg-animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 1000.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+  })
 
 </body>
 

@@ -20,7 +20,7 @@ function getTime(){
 let s=prompt("Enter your name");
       
 function firstBotMessage(){
-    let firstMessage=`Hello ${s} <br> Welcome to Hostel Mate App <br> Click on <button onclick="menu()"> Main Menu </button> to access our sevices <br>`;
+    let firstMessage=`Hello ${s} <br> Welcome to Hostel Mate App <br> Click on <button class="btn" onclick="menu()"> Main Menu </button> to access our sevices <br>`;
     document.getElementById("botStartMessage").innerHTML=`<p class="botText"><span>` + firstMessage +`</span></p>`;
    
     let time = getTime();
@@ -58,7 +58,7 @@ function getResponse(){
     let userText =$("#textInput").val();
 
     if(userText==""){
-        userText="I love Code Palace!";
+        userText="Press Main Menu Please";
     }
 
     let userHtml=`<p class="userText"><span>` + userText + `</span></p>`;
@@ -73,17 +73,6 @@ function getResponse(){
 
 }
 
-// function buttonSendText(sampleText){
-//     let userHtml=`<p class="userText"><span>` + sampleText+`</span></p>`;
-//     $("#textInput").val("");
-//     $("#chatbox").append(userHtml);
-//     document.getElementById("chat-bar-bottom").scrollIntoView(false);
-// }
-
-// function sendButton(){
-//     getResponse();
-// }
-
 
 // Press Enter to send button
 $("#textInput").keypress(function(e){
@@ -91,3 +80,12 @@ $("#textInput").keypress(function(e){
         getResponse();
      }
 })
+document.getElementById("chat-icon").addEventListener("click", function() {
+    var enterEvent = new KeyboardEvent("keypress", {
+      bubbles: true,
+      cancelable: true,
+      keyCode: 13
+    });
+    document.getElementById("textInput").dispatchEvent(enterEvent);
+  });
+  

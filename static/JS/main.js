@@ -127,3 +127,19 @@ document.getElementById("navbar-toggle").addEventListener("click", function() {
     }
   });
   
+  document.getElementById("signinbtn").addEventListener("click", function() {
+    window.location.href = "/signin";
+  });
+  document.getElementById("loginbtn").addEventListener("click", function() {
+    window.location.href = "/login";
+  });
+  document.getElementById("logoclick").addEventListener("click", function() {
+    window.location.href = "/";
+  });
+  document.getElementById("statusbtn").addEventListener("click", function() {
+    window.location.href = "/status";
+  });
+  document.getElementById("adminbtn").addEventListener("click", function() {
+    window.location.href = "/admin";
+  });
+  
